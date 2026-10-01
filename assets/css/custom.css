@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    background: #f8f9fc;
+    color: #343a40;
+}
+
+.app-layout {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    width: 220px;
+    flex-shrink: 0;
+    background: linear-gradient(180deg, #4e73df, #224abe);
+    padding: 24px 16px;
+}
+
+.brand {
+    display: block;
+    color: white;
+    font-size: 22px;
+    font-weight: 700;
+    text-decoration: none;
+    margin-bottom: 32px;
+}
+
+.menu-link {
+    display: block;
+    color: #e1e7ff;
+    text-decoration: none;
+    padding: 12px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+}
+
+.menu-link:hover,
+.menu-link.active {
+    background: rgba(255, 255, 255, 0.18);
+    color: white;
+}
+
+.main-area {
+    flex: 1;
+    min-width: 0;
+}
+
+.topbar {
+    background: white;
+    padding: 20px 24px;
+    border-bottom: 1px solid #e3e6f0;
+    font-weight: 600;
+}
+
+.page-title {
+    color: #1cc88a;
+    font-size: 28px;
+    margin-bottom: 24px;
+}
+
+.dashboard-card {
+    background: white;
+    padding: 24px;
+    border-left: 4px solid #4e73df;
+    border-radius: 18px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+}
+
+.dashboard-card .count {
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 8px;
+}
+
+.content-card {
+    background: white;
+    padding: 24px;
+    border-radius: 12px;
+    border: 1px solid #e3e6f0;
+}
+
+.table tbody tr:hover {
+    --bs-table-bg: #fff3cd;
+    background-color: #fff3cd;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 150px;
+        padding: 20px 10px;
+    }
+
+    .brand {
+        font-size: 18px;
+    }
+}
